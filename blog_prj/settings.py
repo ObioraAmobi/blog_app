@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',
 ]
 
+SITE_ID = 1
+
 MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -127,5 +129,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"), #static directory at the project level
 )
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 DISQUS_WEBSITE_SHORTNAME = "ObisBlog"
