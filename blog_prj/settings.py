@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'blog_app',
     'disqus',
     'django.contrib.sites',
+    'django_forms_bootstrap',
 ]
 
 SITE_ID = 1
