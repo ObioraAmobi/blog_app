@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog_app'
+    'blog_app',
+    'disqus',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -125,3 +127,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"), #static directory at the project level
 )
+
+DISQUS_WEBSITE_SHORTNAME = "ObisBlog"

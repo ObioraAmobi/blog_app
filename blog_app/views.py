@@ -10,4 +10,6 @@ def post_list(request):
 
 def post_detail(request, id):
     post = get_object_or_404(Post, pk=id)
-    return render(request, "blogdetail.html", {'post': post})
+    post.views += 1  # clock up the number of post views
+    post.save()
+    return render(request, "postdetail.html", {'post': post})
